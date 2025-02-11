@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+    color: rgb(206, 205, 205);
+
+}
+.container{
+  padding: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    z-index: 1000;
+    background-color: #2c2525;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+  }
+.itemh{
+    display: flex;
+    gap: 2rem;
+    margin-right: 30px;
+    background-color: #2c2525;
+}
+.items{
+    text-decoration: none;
+    background-color: #2c2525;
+}
+.items:hover{
+  border-bottom: 2px solid yellowgreen;
+}
+.home{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .ab{
+    border: 2px solid grey;
+  }
+  .image{
+    border: 2px solid grey;
+}
+
+p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.textani {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:3.5rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#20627b;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#c10528;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+
+
+.projects{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  perspective: 800px;
+}
+
+.box{
+  height: 300px;
+  width: 450px;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d; 
+  box-shadow: rgba(183, 181, 181, 0.25) 0px 54px 55px, rgba(183, 181, 181, 0.12) 0px -12px 30px, rgba(183, 181, 181, 0.12) 0px 4px 6px, rgba(183, 181, 181, 0.17) 0px 12px 13px, rgba(183, 181, 181, 0.09) 0px -3px 5px;
+  margin: auto;
+  border-radius: 2rem;
+}
+.card:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 10px;
+}
+.front{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.front p{
+  margin-bottom: 10px;
+  padding: 2px;
+  border-radius: 5px;
+  
+  width: 80%;
+  text-align: center;
+}
+
+.back h3{
+  background-color: #3a3a3a;
+}
+.back p{
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.internships{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 2rem;
+  padding: 10px;
+  
+}
+.skills .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  flex-direction: column;
+  box-shadow: rgba(183, 181, 181, 0.25) 0px 54px 55px, rgba(183, 181, 181, 0.12) 0px -12px 30px, rgba(183, 181, 181, 0.12) 0px 4px 6px, rgba(183, 181, 181, 0.17) 0px 12px 13px, rgba(183, 181, 181, 0.09) 0px -3px 5px;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.skills .icon:hover{
+  transform: scale(1.1);
+}
+.skills .icon i{
+  font-size:xx-large;
+}
+
+.skills .icon img{
+  height: 100px;
+  width: 100px;
+}
+
+.cer{
+  margin-top: 30px;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.cer img{
+  height: 200px;
+  border-radius: 2rem;
+  box-shadow: rgba(183, 181, 181, 0.25) 0px 54px 55px, rgba(183, 181, 181, 0.12) 0px -12px 30px, rgba(183, 181, 181, 0.12) 0px 4px 6px, rgba(183, 181, 181, 0.17) 0px 12px 13px, rgba(183, 181, 181, 0.09) 0px -3px 5px;
+  
+}
+
+.cer ul{
+  gap: 2rem;
+}
+
+.cer ul li{
+  list-style:circle;
+}
+
+
+
+.Ach{
+  margin-top: 30px;
+  height: fit-content;  
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; 
+}
+.Ach img{
+  height: 200px;
+  border-radius: 2rem;
+  box-shadow: rgba(183, 181, 181, 0.25) 0px 54px 55px, rgba(183, 181, 181, 0.12) 0px -12px 30px, rgba(183, 181, 181, 0.12) 0px 4px 6px, rgba(183, 181, 181, 0.17) 0px 12px 13px, rgba(183, 181, 181, 0.09) 0px -3px 5px;
+  
+}
+.Ach ul li{
+  
+  list-style:circle;
+  width: 96%;
+  
+}
+
+.about{
+  margin-top: 30px;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; 
+}
+.about img{
+  height: 200px;
+  border-radius: 2rem;
+  box-shadow: rgba(183, 181, 181, 0.25) 0px 54px 55px, rgba(183, 181, 181, 0.12) 0px -12px 30px, rgba(183, 181, 181, 0.12) 0px 4px 6px, rgba(183, 181, 181, 0.17) 0px 12px 13px, rgba(183, 181, 181, 0.09) 0px -3px 5px;
+  
+}
+.about ul li{
+  list-style: none;
+}
+
+.footer{
+  margin-top: 30px;
+  height: fit-content;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.footer a{
+  padding: 20px;
+  display: inline-block;
+  
+}
+.footer i {
+  font-size: 2rem; 
+}
+.footer i:hover{
+  box-shadow: rgba(183, 181, 181, 0.25) 0px 54px 55px, rgba(183, 181, 181, 0.12) 0px -12px 30px, rgba(183, 181, 181, 0.12) 0px 4px 6px, rgba(183, 181, 181, 0.17) 0px 12px 13px, rgba(183, 181, 181, 0.09) 0px -3px 5px;
+  font-size: 3rem;
+  transition: 0.3s;
+}

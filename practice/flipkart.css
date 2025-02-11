@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 4px solid green;
+    padding: 5px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+.box{
+    padding: 1em;
+    border: 2px solid aquamarine;
+    border-radius: 3px;
+    width: 270px;
+
+}
+.item-container{
+    display: grid;
+    grid-template-areas: 
+    'item title'
+    'price cost'
+    ;
+}
+h1{
+    font-style: italic;
+    color: tomato;
+}
+img{
+    /* position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%); */
+   height:280px;
+   width: 265px;
+}
+/* .fb img{
+    grid-area: image;
+
+} */
+
+.item{
+    grid-area: item;
+}
+.cost{
+    grid-area: cost;
+}
+.title{
+    grid-area: title;
+}
+.Price{
+    grid-area: price;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar{
+    padding: 15px;
+    background-color: wheat;
+}
