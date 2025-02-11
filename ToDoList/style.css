@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    height: 100vh;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+}
+.con{
+    /* border: 2px solid yellow; */
+    display: grid;
+    
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    margin: 20PX 25%;
+   grid-template-rows: 0fr 1fr 8fr;
+   gap: 3rem;
+   width: 80%;
+   padding: 60px;
+   height: 95%;
+   background-color: #A1EEBD;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-radius: 20px;
+}
+.inp{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    gap:1rem;
+}
+
+input[type=text]{
+    padding: 8px;
+    border-radius: 38px;
+}
+input[type=button]{
+    border-radius: 10px;
+    padding: 5px;
+    font-size:x-small;
+    background-color: #f5576c;
+    border: #f5576c;
+    color: white;
+}
+input, textarea {
+    text-align: center;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    text-align: center; 
+  }
+  
+.container{
+    background-color: #b4c8bb;
+    height: 300px;
+    border-radius: 8px;
+
+}
+main{
+    
+    border: 2px solid brown;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 8px 16px;
+    border-radius: 8px;
+    
+}
+li{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    list-style: none;
+    text-align: center;
+    /* border: 2px solid blue; */
+    padding: 8px;
+    border-radius: 6px;
+}
+button{
+    border-radius: 8px;
+    padding: 5px;
+    font-size: x-small;
+}
+.item{
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item button{
+    color: white;
+    background-color: red;
+    border: red;
+}

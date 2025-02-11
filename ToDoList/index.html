@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script> 
+  </head>
+  <body>
+    <div class="con">
+      <center><h1>To Do List</h1></center>
+      <div class="inp">
+        <input type="text" placeholder="Enter a Task" id="txt"/>
+        <input type="button" value="ADD" onclick="add()"/>
+        <input type="button" value="Remove All" onclick="deleteall()" />
+      </div>
+      <div class="container">
+        <main id="main">
+          <ul id="task-list">
+            <!-- <li id="task-1" class="item">
+              <p>akfkaklsafndkjf</p>
+              <button type="button" onclick="dele(this, 'task-1')">Delete</button>
+            </li> -->
+          </ul>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
